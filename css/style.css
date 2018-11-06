@@ -24,7 +24,13 @@
     text-decoration:none;
     margin-right:.5em;
 }
-
+.graph{
+    width: 700px;
+    height:500px;
+    position:absolute;
+    top:100vh;
+    left:30vw;
+}
 @media only screen and (max-device-width: 800px) {
     .name {
         color: #1c1c1c;
