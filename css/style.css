@@ -1,52 +1,113 @@
+#world {
+	z-index: 1;
+	vertical-align:top;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(#69c4fd, #f7d9aa);
+	text-align: center;
+}
+
+h1 {
+	margin-top: 3rem;
+	color:#Fff;
+	font-size: 4rem;
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Baloo Paaji', cursive; */
+}
+h2 {
+	margin-top:1rem;
+	color:#fff;
+	font-size:4rem;
+	font-family: 'Slabo 27px', serif;
+}
+h3{
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	color:#Fff;
+	font-size: 5rem;
+	font-family: 'Baloo Paaji', cursive;
+}
+#heading{
+	text-align: center;
+	position:absolute;
+	width: 100%;
+}
+
+#body{
+	background: linear-gradient(#f7d9aa, #e4e0ba);
+	height:100vh;
+	text-align: center;
+}
+
+.scroll-menu{
+	width: .4em;
+	height:9em;
+	position:fixed;
+	top:35%;
+	right:0;
+	margin-right: 2em;
+	background-color: #fff;
+	z-index: 33;
+}
+.scroll-buttons{
+	width: 30px;
+	height: 30px;
+	margin-right: 3em;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	margin-left: -11px;
+	margin-bottom: 2em;
+}
+.active{
+	z-index:-1;
+	border-radius: 36px;
+  background: #bebebe;
+}
+
+
 .hero {
-    background-color: #fff;
-    width: 100%;
-    height: 30vh;
-    text-align:center;
+	width: 100%;
+	text-align:center;
 }
 .name {
-    color:#1c1c1c;
-    padding-top:1.2em;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size:4rem;
+	margin-top:1.2em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:4rem;
 }
 .subtitle {
-    color: #1c1c1c;
-    margin-top:.1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem;
+	margin-top:.1rem;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2rem;
 }
 .icon-collection {
-    text-align:center;
+	color:white;
+	text-align:center;
+	text-decoration:none;
 }
 .hero-icon {
-    color:#1c1c1c;
-    text-decoration:none;
-    margin-right:.5em;
+	color:white;
+	text-decoration:none;
+	margin-right:.5em;
 }
-.graph{
-    width: 700px;
-    height:500px;
-    position:absolute;
-    top:100vh;
-    left:30vw;
-}
+
 @media only screen and (max-device-width: 800px) {
-    .name {
-        color: #1c1c1c;
-        padding-top: 1.2em;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 8rem;
-    }
-    .hero-icon {
-        color: #1c1c1c;
-        text-decoration: none;
-        font-size:7em !important;
-    }
-    .subtitle {
-        color: #1c1c1c;
-        margin-top: .1rem;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 4rem;
-    }
+	.name {
+			color: white;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 8rem;
+	}
+	.hero-icon {
+			color: white;
+			text-decoration: none;
+			font-size:7em !important;
+	}
+	.subtitle {
+			color: white;
+			margin-top: .1rem;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 4rem;
+	}
 }
