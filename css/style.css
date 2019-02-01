@@ -70,6 +70,7 @@ h3{
 
 .hero {
 	width: 100%;
+	position: absolute;
 	text-align:center;
 }
 .name {
@@ -94,6 +95,9 @@ h3{
 }
 
 @media only screen and (max-device-width: 800px) {
+	.hero{
+		margin-top:5em;
+	}
 	.name {
 			color: white;
 			font-family: 'Josefin Sans', sans-serif;
