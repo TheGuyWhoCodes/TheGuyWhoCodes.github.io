@@ -108,7 +108,7 @@ h3{
 	.name {
 			color: white;
 			font-family: 'Josefin Sans', sans-serif;
-			font-size: 8rem;
+			font-size: 4rem;
 			margin-top:0;
 	}
 	.hero-icon {
@@ -121,6 +121,9 @@ h3{
 			margin-top: .1rem;
 			font-family: 'Josefin Sans', sans-serif;
 			font-size: 4rem;
+	}
+	.icon-collection {
+		font-size:.5em;
 	}
 }
 
