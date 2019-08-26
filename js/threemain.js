@@ -541,7 +541,7 @@ function createPlane(){
 	airplane.mesh.position.y = 100;
 	scene.add(airplane.mesh);
 }
-renderer.render(scene, camera);
+// renderer.render(scene, camera);
 
 function loop(){
 	// Rotate the propeller, the sea and the sky
