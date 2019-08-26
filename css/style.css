@@ -1,7 +1,14 @@
+::selection {
+	background: #228b22; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #228b22; /* Gecko Browsers */
+}
+
 #world {
 	z-index: 1;
 	vertical-align:top;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -75,6 +82,7 @@ h3{
 }
 .name {
 	margin-top:1.2em;
+	font-weight: 600;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size:4rem;
 }
@@ -115,4 +123,46 @@ h3{
 			font-family: 'Josefin Sans', sans-serif;
 			font-size: 4rem;
 	}
+}
+
+#portfolio {
+	z-index: 2;
+	vertical-align:top;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin: -10px 0 0 0;
+}
+
+.portfolio-header {
+	margin-top:1em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:4rem;
+	color: #1a1c1d;
+	font-weight:600;
+}
+
+.portfolio-card {
+	position: relative;
+    background-size: cover;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 1.7rem;
+	transition: 0.25s;
+	height:293px;
+}
+
+.tf2skins {
+	background-image: url("https://i.redd.it/tr1c0maefli31.jpg");
+}
+
+.card-overlay {
+	background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    transition: 0.25s;
 }
