@@ -31,7 +31,6 @@ h2 {
 }
 h3{
 	padding-top: 3rem;
-	padding-bottom: 2rem;
 	color:#Fff;
 	font-size: 5rem;
 	font-family: 'Baloo Paaji', cursive;
@@ -154,15 +153,65 @@ h3{
 }
 
 .tf2skins {
-	background-image: url("https://i.redd.it/tr1c0maefli31.jpg");
+	background-image: url("../images/tf2skins.png");
+	background-position: center; 
 }
 
+.lifttracker {
+	background-image: url("../images/lifttracker.jpg");
+	background-position: center; 
+}
+
+.caniac {
+	background-image: url("../images/caniac.jpg");
+	background-position: center; 
+}
+
+.car {
+	background-image: url("../images/car.png");
+	background-position: center; 
+}
+
+.hawk {
+	background-image: url("../images/hawk.png");
+	background-position: center; 
+}
+
+.tracker {
+	background-image: url("../images/tracker.png");
+	background-position: center; 
+
+}
 .card-overlay {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 0;
     pointer-events: none;
     transition: 0.25s;
+}
+
+.portfolio-card-header {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2.2rem;
+}
+
+.portfolio-sub {
+	color: #fff;
+}
+.portfolio-card article {
+	padding-left: 30px;
+	padding-right: 30px;
+    position: relative;
+	z-index: 10;
+}
+
+.portfolio-card article p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+p.small {
+	font-size: 14px;
+    opacity: 0.65;
 }

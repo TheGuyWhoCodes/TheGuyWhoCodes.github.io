@@ -78,7 +78,7 @@ function createScene() {
 }
 function handleWindowResize() {
 	// update height and width of the renderer and the camera
-	HEIGHT = window.innerHeight + 200;
+	HEIGHT = window.innerHeight;
 	WIDTH = window.innerWidth;
 	renderer.setSize(WIDTH, HEIGHT);
 	camera.aspect = WIDTH / HEIGHT;
