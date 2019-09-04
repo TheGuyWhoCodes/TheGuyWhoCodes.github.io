@@ -58,7 +58,7 @@ function createScene() {
     // allow transparency
     alpha:true,
     //AA, will this work? Hi my name is Chris.... Hi Chris....
-    antialias:false
+    antialias:true
   });
 
   // Set the size of the screen for the renderer
