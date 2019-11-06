@@ -147,43 +147,41 @@ h3{
 
 .portfolio-card {
 	position: relative;
-    background-size: cover;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-top: 1.7rem;
+  background-size: cover;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 1.7rem;
 	transition: 0.25s;
 	height:293px;
+	background-position: center; 
+
 }
 
 .tf2skins {
 	background-image: url("../images/tf2skins.png");
-	background-position: center; 
 }
 
 .lifttracker {
 	background-image: url("../images/lifttracker.jpg");
-	background-position: center; 
 }
 
 .caniac {
 	background-image: url("../images/caniac.jpg");
-	background-position: center; 
 }
 
 .car {
 	background-image: url("../images/car.png");
-	background-position: center; 
 }
 
 .hawk {
 	background-image: url("../images/hawk.png");
-	background-position: center; 
 }
 
 .tracker {
 	background-image: url("../images/tracker.png");
-	background-position: center; 
-
+}
+.jeop {
+	background-image: url("../images/jeopy.PNG");
 }
 .card-overlay {
 	background: rgba(0, 0, 0, 0.7);
