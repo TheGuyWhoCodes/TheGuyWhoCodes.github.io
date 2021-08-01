@@ -108,7 +108,7 @@ h3{
 	.name {
 			color: white;
 			font-family: 'Josefin Sans', sans-serif;
-			font-size: 4rem;
+			font-size: 3.6rem;
 			margin-top:0;
 	}
 	.hero-icon {
@@ -183,8 +183,14 @@ h3{
 .jeop {
 	background-image: url("../images/jeopy.PNG");
 }
+.lync {
+	background-image: url("../images/lync.jpg");
+}
+.spotify {
+	background-image: url("../images/spotify.jpg");
+}
 .card-overlay {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
     position: absolute;
