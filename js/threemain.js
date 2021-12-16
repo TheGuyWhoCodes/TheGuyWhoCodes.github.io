@@ -1,5 +1,5 @@
 var Colors = {
-	red:0xf25346,
+	red:"#d44e4e",
 	white:0xFFFFFF,
 	brown:0x59332e,
 	pink:0xF5986E,
@@ -7,21 +7,24 @@ var Colors = {
 	blue:0x68c3c0,
 };
 window.addEventListener('load',init,false);
-
+var hasClicked = false;
 function init(){
 	createScene();
 	createLights();
 	createPlane();
 	createSea();
 	createSky();
-
 	//add the listener
-	document.addEventListener('mousemove', handleMouseMove, false);
+	document.addEventListener('mousemove', handleMouseMove);
+	document.addEventListener('click', handleClick);
 	
 	loop();
 }
 
-
+function handleClick() {
+	console.log("click")
+	hasClicked = true;
+}
 var scene,
 		camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH,
 		renderer, container;
@@ -34,7 +37,7 @@ function createScene() {
   // Create the scene
   scene = new THREE.Scene();
   //add some fog
-  scene.fog = new THREE.Fog(0xf7d9aa, 100, 950);
+  scene.fog = new THREE.Fog("#C6AE88", 100, 950);
 
   // Create the camera
   aspectRatio = WIDTH / HEIGHT;
@@ -541,7 +544,7 @@ function createPlane(){
 	airplane.mesh.position.y = 100;
 	scene.add(airplane.mesh);
 }
-// renderer.render(scene, camera);
+renderer.render(scene, camera);
 
 function loop(){
 	// Rotate the propeller, the sea and the sky
@@ -562,7 +565,6 @@ var mousePos={x:0, y:0};
 // now handle the mousemove event
 
 function handleMouseMove(event) {
-
 	// here we are converting the mouse position value received
 	// to a normalized value varying between -1 and 1;
 	// this is the formula for the horizontal axis:
@@ -574,6 +576,9 @@ function handleMouseMove(event) {
 	
 	var ty = 1 - (event.clientY / HEIGHT)*2;
 	mousePos = {x:tx, y:ty};
+	if(hasClicked) {
+		updatePlane();
+	}
 
 }
 function updatePlane(){
@@ -583,8 +588,8 @@ function updatePlane(){
 	// depending on the mouse position which ranges between -1 and 1 on both axes;
 	// to achieve that we use a normalize function (see below)
 
-	var targetX = normalize(mousePos.x, -1, 1, -100, 100);
-	var targetY = normalize(mousePos.y, -1, 1, 25, 175);
+	var targetX = normalize(mousePos.x, -1, 1, -25, 25);
+	var targetY = normalize(mousePos.y, -1, 1, 70, 120);
 
 	// update the airplane's position
 	airplane.mesh.position.y = targetY;
