@@ -5,10 +5,15 @@ body {
 	font-size: 18px;
 	color: #444;
 	padding: 0 10px;
+	text-align: center;
 }
 .ss {
 	width:30%;
 	height:30%;
+}
+
+h1 {
+	margin-top:0;
 }
 
 .title {
@@ -19,4 +24,15 @@ body {
 .subtitle {
 	font-size: 0.83em;
 	font-weight: bold;
+}
+
+@media only screen and (max-device-width: 800px) {
+	.ss {
+		width:95%;
+		height:95%;
+	}
+	.title {
+		font-size: 3em;
+		font-weight: bold;
+	}
 }
