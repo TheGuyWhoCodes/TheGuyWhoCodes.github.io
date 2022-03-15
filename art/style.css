@@ -1,11 +1,23 @@
+@font-face {
+    font-family: UltraHyper;
+    src: url("assets/UltraHyper-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UltraHyper;
+    font-style: italic;
+    src: url("assets/UltraHyper-Italic.otf") format("opentype");
+}
+
 body {
 	margin: 40px auto;
 	max-width: 650px;
-	line-height: 1.6;
+	line-height: initial;
 	font-size: 18px;
 	color: #444;
 	padding: 0 10px;
-	text-align: center;
+    text-align: center;
+    background-image: url("assets/grid.jpg");
 }
 .ss {
 	width:30%;
@@ -13,7 +25,10 @@ body {
 }
 
 h1 {
-	margin-top:0;
+    margin-top:0;
+    font-style: italic;
+    font-family: 'UltraHyper';
+    letter-spacing: .2rem;
 }
 
 .title {
@@ -24,6 +39,10 @@ h1 {
 .subtitle {
 	font-size: 0.83em;
 	font-weight: bold;
+}
+
+.item {
+    margin-bottom:20.5px;
 }
 
 @media only screen and (max-device-width: 800px) {
