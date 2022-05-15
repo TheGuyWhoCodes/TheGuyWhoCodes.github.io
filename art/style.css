@@ -14,14 +14,19 @@ body {
 	max-width: 650px;
 	line-height: initial;
 	font-size: 18px;
-	color: #444;
+	color: white;
 	padding: 0 10px;
     text-align: center;
-    background-image: url("assets/grid.jpg");
+	background-color: #000;
+    /* background-image: url("assets/grid.jpg"); */
 }
 .ss {
 	width:30%;
 	height:30%;
+}
+
+.rotate {
+	width:100%;
 }
 
 h1 {
