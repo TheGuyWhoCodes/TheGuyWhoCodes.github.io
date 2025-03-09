@@ -1,188 +1,114 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href=" https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "css/style.css">
-    <script src = "js/three.min.js"></script>
-    <script src = "js/threemain.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <title>chris ariagno :: programmer
-	</title>
-    <link rel="icon" type="image/png"  href="favicon.ico">
-    <script src = "js/script.js"></script>
-    <meta name="description" content="Christopher Ariagno is a full stack developer that goes to school at the University of Kansas for Computer Science and Math. Currently working at Google, Chris loves working in Java, C++, Python, and Javascript."/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  </head>
-  <body>
-    <div id="world">
-      <div class="hero">
-        <h1 class="name">Christopher Ariagno</h1><br />
-        <div class="icon-collection">
-            <a href="https://www.linkedin.com/in/ariagno/ "><i class="fab fa-linkedin fa-3x hero-icon"></i></a>
-            <a href="http://github.com/theguywhocodes"><i class="fab fa-github fa-3x hero-icon"></i></a>
-            <a href="Resume.pdf"><i class="fas fa-file fa-3x hero-icon"></i></a>
-            <a href="mailto:chris@ariagno.com"><i class="fas fa-envelope fa-3x hero-icon"></i></a>
-            <a href="art/"><i class="fas fa-paint-brush fa-3x hero-icon"></i></a>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/32907d7ab3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Christopher Ariagno</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo-google.png" />
+</head>
+
+<body>
+    <div class="md:container md:mx-auto lg:px-48 px-4">
+        <!-- Header -->
+        <div class="header">
+            <div class="name-and-shit">
+                <img class="img-header" src="assets/logo-google.svg" align="left" />
+                <!-- <p class="pl-1">Christopher Ariagno</p> -->
+            </div>
         </div>
 
-        <div class="arrow bounce">
+        <!-- Start of Body Content-->
+        <!-- Home-->
+        <div class="text-xl font-bold">Christopher Ariagno</div>
+        <div class="text-lg">Software Engineer and Designer</div>
+        <div class="text-xs italic">As Seen on <a href = "https://youtu.be/CjAsr-5xiIw?si=3yLE8G8yaDdrSqC6&t=672">Adult Swim!</a></div>
+        <p class="pt-5">
+            Currently, I'm a Software Engineer at Google making Google Drive safe
+            and reliable. I work on the Drive Activity team to help users identify
+            how their
+            <a href="https://developers.google.com/drive/activity/v2">Drive data is being used.</a>
+        </p>
+        <p class="pt-5">I graduated from the University of Kansas in 2022 with a degree in Computer Science and Math.
+        </p>
 
-        </div>
+        <p class="pt-5">Outside of work, I go to a lot of concerts, play music, run, road bike, play video games, work on my <a href = "assets/miata.jpg">Miata</a>, and snowboard.
+        </p>
+
+        <!--Projects-->
+        <h2 class="text-2xl pt-7 font-bold">Projects</h2>
+        <ul class="list-disc list-inside ml-4">
+            <li class="pt-2"><i class="fa-solid fa-keyboard"></i> IncomingKeys Ulti77</li>
+            <ul class="list-disc list-inside ml-8">
+                <li><b>Description: </b>Ulti77 is a USB-C, QMK+VIA compatible, tray mount keyboard. The keyboard is 77
+                    keys and includes a volume knob and OLED screen. The keyboard includes a custom hotswap PCB and
+                    anodized aluminum case and plate.
+                </li>
+            </ul>
+            <li class="pt-2">🔦 FlashDroid</li>
+            <ul class="list-disc list-inside ml-8">
+                <li><b>Description: </b>A DIY Android botnet created for EECS 700. Includes DDoS techniques like
+                    Slowloris and HTTP GET flood. Slides <a
+                        href="https://docs.google.com/presentation/d/15Sj-X_3LeWseNKNa0SlJTtrzgEMQmJs8WCMGutgmdlc/edit">here</a>
+                </li>
+            </ul>
+            <li class="pt-2"><i class="fa-solid fa-gun"></i> tf2skins.co</li>
+            <ul class="list-disc list-inside ml-8">
+                <li><b>Description: </b>I made this when TF2 first <a
+                        href="https://www.teamfortress.com/gunmettle/">introduced</a> skins into the game. The website
+                    was able to keep track of weapon prices via the Steam Marketplace API. Coverage <a
+                        href="https://www.youtube.com/watch?v=KcJS5x9tKXk">here</a>
+                </li>
+            </ul>
+            <li class="pt-2">🤠 et.al from when I was younger :)</li>
+        </ul>
+        <!--Work-->
+        <h2 class="text-2xl pt-7 font-bold">Work</h2>
+        <ul class="list-disc list-inside ml-4">
+            <li  class="pt-2">Google 2022-Now</li>
+            <ul class="list-disc list-inside ml-4">
+                <li><b>Location: </b>Boulder, CO</li>
+                <li><b>Team: </b> Drive Activity</li>
+            </ul>
+            <li class="pt-2">Google 2020-2021</li>
+            <ul class="list-disc list-inside ml-4">
+                <li><b>Location: </b>Remote</li>
+                <li><b>Team: </b> Cloud SQL Engprod</li>
+            </ul>
+            <li class="pt-2">RiskIQ <p class ="text-xs italic inline"> (Now Microsoft) </p>2019-2020</li>
+            <ul class="list-disc list-inside ml-4">
+                <li><b>Location: </b>Lenexa, KS</li>
+                <li><b>Team: </b> PassiveTotal</li>
+            </ul>
+            <li class="pt-2">Smithvile High School 2016-2018</li>
+            <ul class="list-disc list-inside ml-4">
+                <li><b>Location: </b>Smithville, MO</li>
+                <li><b>Team: </b> IT Department</li>
+            </ul>
+        </ul>
+        <!--Contact-->
+        <h2 class="text-2xl pt-7 font-bold">Contact</h2>
+        For any inquiries, please reach out at
+        <a href="mailto:chris@ariagno.com">chris@ariagno.com</a>. Resume upon request. 
+        Below are my socials:
+        <ul class="list-inside list-disc">
+            <li>
+                <a href="https://x.com/ariagnooo"><i class="fa-brands fa-square-x-twitter"></i> X</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ariagno/"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/TheGuyWhoCodes"><i class="fa-brands fa-github"></i> GitHub</a>
+            </li>
+        </ul>
+        <footer class="pt-5 pb-5 italic">
+            Christopher Ariagno, <script>document.write(new Date().getFullYear())</script>
+        </footer>
     </div>
-  </div>
+</body>
 
-  <div id = "portfolio">
-      <h1 class ="portfolio-header">Portfolio</h1>
-      <div class="container">
-        <div class="card-deck mb-3 text-center">
-          <div class="col-lg-4">
-			<a href = "https://www.youtube.com/watch?v=KcJS5x9tKXk">
-				<div class = "portfolio-card tf2skins">
-				<div class="card-overlay">
-					<article>
-						<h3 class = "portfolio-card-header">tf2skins.co</h3>
-						<p class = "portfolio-sub">TF2Skins.co was a site built on a LAMP stack to price check weapon skins in the popular
-						shooter game Team Fortress 2.
-						</p>
-						<p class = "small">PHP, MySQL, VPS Setup, UI/UX</p>
-					</article>
-				</div>
-				</div>
-			</a>
-          </div>
-          <div class="col-lg-4">
-			<div class = "portfolio-card tracker">
-			<div class="card-overlay">
-				<article>
-					<h3 class = "portfolio-card-header"><i class="fas fa-cube"></i>  trackerino.com</h3>
-					<p class = "portfolio-sub">Built using Node and Express, trackerino is a site to track your packages from the four big US couriers. 
-					</p>
-					<p class = "small">Node, Express, UI/UX, APIs</p>
-					</article>
-			</div>
-			</div>
-          </div>
-          <div class="col-lg-4">
-			<a href = "https://www.github.com/theguywhocodes/lifttracker">
-            <div class = "portfolio-card lifttracker">
-              <div class="card-overlay">
-                <article>
-                  <h3 class = "portfolio-card-header">LiftTracker</h3>
-                  <p class = "portfolio-sub">LiftTracker was a library for FRC teams to use in order to track vision targets on the game field. Most commonly used library during the season 
-                  </p>
-                  <p class = "small">Java, OpenCV, Raspberry Pi, Tegra K1</p>
-                </article>
-              </div>
-            </div>
-			</a>
-          </div>
-        </div>
-
-        <div class="card-deck mb-3 text-center">
-          <div class="col-lg-4">
-			<a herf ="https://github.com/TheGuyWhoCodes/SWAT-2018-Code">
-				<div class = "portfolio-card caniac">
-				<div class="card-overlay">
-					<article>
-						<h3 class = "portfolio-card-header">Caniac Robot</h3>
-						<p class = "portfolio-sub">FRC code base that features an adaptive pure pursuit controller, motion profiling, multiple PID controllers, and custom built SmartDashboard.
-						</p>
-						<p class = "small">Java, Reflections, Automatic Systems, Python</p>
-					</article>
-				</div>
-				</div>
-			</a>
-          </div>
-          <div class="col-lg-4">
-            <div class = "portfolio-card hawk">
-              <div class="card-overlay">
-                <article>
-                  <h3 class = "portfolio-card-header">Hawk Track</h3>
-                  <p class = "portfolio-sub">Built for the HackKU hackathon, Hawk Track uses Python to track how many people are around a given area in order to see if the given area is busy.
-                  </p>
-                  <p class = "small">Python, HTML, CSS, Firebase, Raspberry Pi</p>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class = "portfolio-card car">
-              <div class="card-overlay">
-                <article>
-                  <h3 class = "portfolio-card-header">Car Chrome Extension</h3>
-                  <p class = "portfolio-sub">Built for a car dealership, this Chrome Extension aids car purchasers on eBay, Craigslist, AutoTrader, and cars.com to find the best deal.</p>
-                  <p class = "small">JavaScript, HTML, CSS, Site manipulation</p>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class = "portfolio-card jeop">
-              <div class="card-overlay">
-                <article>
-                  <h3 class = "portfolio-card-header">Jeopardy Search Engine</h3>
-                  <p class = "portfolio-sub">Built for the Capital One Summit, this site is a search engine for all Jeopardy questions with a live simulator</p>
-                  <p class = "small">Angular, Ruby on Rails, PostgresSQL</p>
-                </article>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-			<a href = "https://github.com/TheGuyWhoCodes/bulkshort">
-            <div class = "portfolio-card lync">
-              <div class="card-overlay">
-                <article>
-                  <h3 class = "portfolio-card-header">lync.rip</h3>
-                  <p class = "portfolio-sub">In preperation for my internship @ Google, I built this site to practice GoLang and Kubernetes. This site is a URL shortner that supports multiple links with a high efficiency GoLang backend</p>
-                  <p class = "small">Angular, GoLang, GCP, Kubernetes</p>
-                </article>
-              </div>
-            </div>
-			</a>
-          </div>
-
-            <div class="col-lg-4">
-			<a href = "http://ariagno.com/spotify">
-
-              <div class = "portfolio-card spotify">
-                <div class="card-overlay">
-                  <article>
-                      <h3 class = "portfolio-card-header">Spotify Quarantine</h3>
-                      <p class = "portfolio-sub">Built using Angular, Spotify Quarantine is a site to let listeners generate a report for their top tracks during COVID Quarantine</p>
-                      <p class = "small">Angular, Spotify API, GitHub Pages</p>
-                  </article>
-                </div>
-              </div>
-				</a>
-
-            </div>
-
-			<div class="col-lg-4">
-				<a href = "https://docs.google.com/presentation/d/15Sj-X_3LeWseNKNa0SlJTtrzgEMQmJs8WCMGutgmdlc/edit?usp=sharing">
-				<div class = "portfolio-card flashdroid">
-				  <div class="card-overlay">
-					<article>
-						<h3 class = "portfolio-card-header">FlashDroid🔦</h3>
-						<p class = "portfolio-sub">FlashDroid is the <b>first</b> open-source DDoS botnet for Android devices. Built for Mobile Security @ KU.</p>
-						<p class = "small">Java, Angular, Firebase</p>
-					</article>
-				  </div>
-				</div>
-			</a>
-			
-			</div>
-
-        </div>
-      </div>
-  </div>
-
-  </body>
 </html>
-
-<!-- forces build oopsie woopsie -->
