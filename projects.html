@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/32907d7ab3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Christopher Ariagno</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo-google.png" />
+    <meta name="keywords" content="Christopher, Ariagno, Google, Engineer, Web Developer">
+    <meta name="author" content="Christopher Ariagno">
+    <meta name="description"
+        content="Personal website for Christopher Ariagno. Christopher Ariagno is a Full Stack Engineer and Designer based out of Boulder CO.">
+</head>
+
+<body>
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <div
+            class="hidden md:flex md:w-1/2 md:h-screen bg-neutral-900 md:sticky md:top-0 items-center justify-center relative">
+            <canvas id="three-canvas" data-edge-color="#ff0000" class="w-full h-full block absolute inset-0"></canvas>
+            <div class="z-10 bg-white p-6 shadow-l text-center max-w-xs">
+                <h1 class="name">chris' projects</h1>
+            </div>
+
+        </div>
+
+        <div class="md:w-1/2 w-full md:container md:mx-auto lg:px-24 px-4 py-8 flex flex-col justify-center">
+            <div class="header text-center">
+                <div class="name-and-shit ">
+                    <img class="img-header" src="assets/logo-google.svg" />
+                </div>
+                <div class="header-links">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="work.html">Work</a>
+                </div>
+            </div>
+
+
+            <h2 class="text-2xl pt-7 font-bold">Projects</h2>
+            <ul class="list-disc list-inside ml-4">
+                <li class="pt-2"><i class="fa-solid fa-keyboard"></i> IncomingKeys Ulti77</li>
+                <ul class="list-disc list-inside ml-8">
+                    <li><b>Description: </b>Ulti77 is a USB-C, QMK+VIA compatible, tray mount keyboard. The keyboard is
+                        77
+                        keys and includes a volume knob and OLED screen. The keyboard includes a custom hotswap PCB and
+                        anodized aluminum case and plate.
+                    </li>
+                </ul>
+                <li class="pt-2">🔦 FlashDroid</li>
+                <ul class="list-disc list-inside ml-8">
+                    <li><b>Description: </b>A DIY Android botnet created for EECS 700. Includes DDoS techniques like
+                        Slowloris and HTTP GET flood. Slides <a
+                            href="https://docs.google.com/presentation/d/15Sj-X_3LeWseNKNa0SlJTtrzgEMQmJs8WCMGutgmdlc/edit">here</a>
+                    </li>
+                </ul>
+                <li class="pt-2"><i class="fa-solid fa-gun"></i> tf2skins.co</li>
+                <ul class="list-disc list-inside ml-8">
+                    <li><b>Description: </b>I made this when TF2 first <a
+                            href="https://www.teamfortress.com/gunmettle/">introduced</a> skins into the game. The
+                        website
+                        was able to keep track of weapon prices via the Steam Marketplace API. Coverage <a
+                            href="https://www.youtube.com/watch?v=KcJS5x9tKXk">here</a>
+                    </li>
+                </ul>
+                <li class="pt-2">🤠 et.al from when I was younger :)</li>
+            </ul>
+            <footer class="pt-5 pb-5 italic">
+                Christopher Ariagno,
+                <script>document.write(new Date().getFullYear())</script><br>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
